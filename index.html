@@ -4,71 +4,76 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio — Fabio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
- 
+
   <!-- NAV -->
   <nav id="nav">
     <a href="#" class="nav-logo">fabio<span>.</span>getPortfolio();</a>
-    <ul class="nav-links">
-      <li><a href="#about">about</a></li>
-      <li><a href="#contact">contatti</a></li>
-    </ul>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#about" data-it="about" data-en="about">about</a></li>
+        <li><a href="#contact" data-it="contatti" data-en="contact">contatti</a></li>
+      </ul>
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-label" id="langLabel">EN</span>
+      </button>
+    </div>
   </nav>
- 
+
   <!-- HERO -->
   <section id="hero">
     <div class="hero-inner">
- 
+
       <div class="hero-text">
-        <p class="hero-tag">Pronto ad imparare</p>
-        <h1 class="hero-name">Ciao, sono <b>Fabio</b> </h1>
-        <p class="hero-role">Studente e developer junior, appassionato di tech e determinato</p>
+        <p class="hero-tag" data-it="Pronto ad imparare" data-en="Ready to learn">Pronto ad imparare</p>
+        <h1 class="hero-name">
+          <span data-it="Ciao, sono" data-en="Hi, I'm">Ciao, sono</span> <b>Fabio</b>
+        </h1>
+        <p class="hero-role" data-it="Studente e developer junior, appassionato di tech e determinato" data-en="Student & junior developer, tech enthusiast and determined">Studente e developer junior, appassionato di tech e determinato</p>
         <div class="hero-actions">
-          <a href="#about" class="btn-primary">Chi sono</a>
-          <a href="#contact" class="btn-ghost">Contattami</a>
+          <a href="#about" class="btn-primary" data-it="Chi sono" data-en="About me">Chi sono</a>
+          <a href="#contact" class="btn-ghost" data-it="Contattami" data-en="Contact me">Contattami</a>
         </div>
       </div>
- 
+
       <div class="hero-avatar">
         <div class="avatar-frame">
           <div class="avatar-ring"></div>
           <img src="avatar.jpg" alt="Avatar"/>
         </div>
       </div>
- 
+
     </div>
   </section>
- 
+
   <!-- ABOUT -->
   <section id="about">
     <div class="section-wrap">
-      <p class="section-label reveal">Chi sono</p>
+      <p class="section-label reveal" data-it="Chi sono" data-en="About me">Chi sono</p>
       <div class="about-grid">
- 
+
         <div>
-          <h2 class="section-title reveal">Un po' di me.</h2>
+          <h2 class="section-title reveal" data-it="Un po' di me." data-en="A bit about me.">Un po' di me.</h2>
           <div class="about-text reveal">
-            <p>
+            <p data-it="Sono &lt;strong&gt;Fabio&lt;/strong&gt;, sviluppatore junior basato a &lt;strong&gt;Torino&lt;/strong&gt;." data-en="I'm &lt;strong&gt;Fabio&lt;/strong&gt;, a junior developer based in &lt;strong&gt;Turin&lt;/strong&gt;, Italy.">
               Sono <strong>Fabio</strong>, sviluppatore junior basato a <strong>Torino</strong>.
-              
             </p>
-            <p>
+            <p data-it="Ho esperienza basilare data dall'apprendimento accademico e sono interessato a lavorare su progetti piccoli al fine di migliorare le mie competenze e costruire un &lt;strong&gt;portfolio solido&lt;/strong&gt;." data-en="I have foundational experience from academic studies and I'm eager to work on small projects to sharpen my skills and build a &lt;strong&gt;solid portfolio&lt;/strong&gt;.">
               Ho esperienza basilare data dall'apprendimento accademico e sono interessato a lavorare
               su progetti piccoli al fine di migliorare le mie competenze e costruire un <strong>portfolio solido</strong>.
             </p>
-              <p>
-                Fuori dal codice mi interesso di <strong>musica, videogiochi e poesie</strong>.
-              </p>
+            <p data-it="Fuori dal codice mi interesso di &lt;strong&gt;musica, videogiochi e poesie&lt;/strong&gt;." data-en="Outside of code, I'm into &lt;strong&gt;music, video games, and poetry&lt;/strong&gt;.">
+              Fuori dal codice mi interesso di <strong>musica, videogiochi e poesie</strong>.
             </p>
           </div>
         </div>
- 
+
         <div>
           <div class="skills-box reveal">
-            <h4>// competenze attuali</h4>
+            <h4 data-it="// competenze attuali" data-en="// current skills">// competenze attuali</h4>
             <div class="skill-list">
               <div class="skill-item">
                 <span class="skill-name">HTML</span>
@@ -92,9 +97,9 @@
               </div>
             </div>
           </div>
- 
+
           <div class="skills-box reveal" style="margin-top: 1.25rem;">
-            <h4>// voglio imparare</h4>
+            <h4 data-it="// voglio imparare" data-en="// want to learn">// voglio imparare</h4>
             <div class="learn-tags">
               <span class="learn-tag">Python</span>
               <span class="learn-tag">SQL</span>
@@ -102,36 +107,36 @@
             </div>
           </div>
         </div>
- 
+
       </div>
     </div>
   </section>
- 
+
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-wrap">
-      <p class="section-label reveal">Parliamoci</p>
+      <p class="section-label reveal" data-it="Parliamoci" data-en="Let's talk">Parliamoci</p>
       <div class="contact-inner">
- 
+
         <div>
-          <h2 class="section-title reveal">Hai un progetto?</h2>
-          <p class="contact-text reveal">
-            Sono disponibile per collaborazioni, progetti freelance di piccola grandezza 
-            In particolare mi offro per <strong>progetti web e bot di Discord</strong> data la mia esperienza, 
+          <h2 class="section-title reveal" data-it="Hai un progetto?" data-en="Got a project?">Hai un progetto?</h2>
+          <p class="contact-text reveal" data-it="Sono disponibile per collaborazioni e progetti freelance di piccola grandezza. In particolare mi offro per &lt;strong&gt;progetti web e bot di Discord&lt;/strong&gt;, ma sono aperto a qualsiasi proposta che mi permetta di crescere e imparare." data-en="I'm available for collaborations and small freelance projects. In particular I offer my skills for &lt;strong&gt;web projects and Discord bots&lt;/strong&gt;, but I'm open to any proposal that lets me grow and learn.">
+            Sono disponibile per collaborazioni e progetti freelance di piccola grandezza.
+            In particolare mi offro per progetti<strong> web e bot di Discord</strong>,
             ma sono aperto a qualsiasi proposta che mi permetta di crescere e imparare.
           </p>
- 
-          <div>
+          
+          <p class="contact-sub reveal" data-it="Per qualsiasi domanda o proposta, non esitare a contattarmi tramite email o sui miei social." data-en="For any question or proposal, feel free to reach me via email or on my socials.">
             Per qualsiasi domanda o proposta, non esitare a contattarmi tramite email o sui miei social.
-          </div>
- 
+          </p>
+
           <a href="mailto:ipekufabio2007@gmail.com" class="contact-email reveal">
             ipekufabio2007@gmail.com
           </a>
         </div>
- 
+
         <div class="social-list reveal">
- 
+
           <a href="https://github.com/IpekFab" target="_blank" rel="noopener" class="social-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.463-1.11-1.463-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
@@ -139,7 +144,7 @@
             GitHub
             <span class="social-platform">github.com/IpekFab</span>
           </a>
- 
+
           <a href="#" target="_blank" rel="noopener" class="social-item">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
@@ -147,24 +152,32 @@
             Discord
             <span class="social-platform">Ipek_Fab_II</span>
           </a>
- 
+
           <a href="https://www.fiverr.com/ipek_fab/buying?source=avatar_menu_profile" target="_blank" rel="noopener" class="social-item">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M23.004 15.588a.995.995 0 1 0 .002-1.99.995.995 0 0 0-.002 1.99zm-.996-3.705h-.85c-.546 0-.84.41-.84 1.092v2.466h-1.61v-3.558h-.684c-.547 0-.84.41-.84 1.092v2.466h-1.61v-4.874h1.61v.74c.264-.574.626-.74 1.163-.74h1.972v.74c.264-.574.625-.74 1.162-.74h.527v1.316zm-6.786 1.501h-3.359c.088.592.508.88 1.047.88.43 0 .732-.156.928-.468l1.387.4c-.4.84-1.213 1.308-2.315 1.308-1.718 0-2.64-1.122-2.64-2.523 0-1.386.95-2.523 2.562-2.523 1.525 0 2.406 1.093 2.406 2.523 0 .14-.01.273-.016.403zm-1.567-.758c-.04-.465-.39-.784-.918-.784-.496 0-.86.274-.967.784h1.885zm-4.5-2.116v4.874H7.545v-.536c-.332.43-.81.673-1.463.673-1.316 0-2.316-1.106-2.316-2.523s1-2.523 2.316-2.523c.654 0 1.131.244 1.463.674v-.54h1.61zm-1.61 2.49c0-.703-.449-1.15-1.014-1.15-.567 0-1.014.447-1.014 1.15 0 .702.447 1.15 1.014 1.15.565 0 1.014-.448 1.014-1.15zM4.586 9.26c0 .51-.41.92-.918.92s-.917-.41-.917-.92.41-.92.918-.92.917.41.917.92zm-1.61 6.602H1.366v-4.874h1.61v4.874zm17.747-13.5H3.277C1.73 2.36.5 3.59.5 5.138v13.724c0 1.548 1.23 2.778 2.777 2.778h17.446c1.548 0 2.777-1.23 2.777-2.778V5.138c0-1.547-1.23-2.777-2.777-2.777z"/>
             </svg>
             Fiverr
             <span class="social-platform">IpekFab</span>
-          </a> 
+          </a>
         </div>
       </div>
     </div>
   </section>
- 
+
   <!-- FOOTER -->
   <footer>
-    <p>© 2026 Ipek_Fab PortFolio | Tutti i diritti riservati</p>
+    <p data-it="© 2026 Ipek_Fab Portfolio | Tutti i diritti riservati" data-en="© 2026 Ipek_Fab Portfolio | All rights reserved">© 2026 Ipek_Fab Portfolio | Tutti i diritti riservati</p>
+    <div class="footer-counter">
+      <span class="counter-label" data-it="visite" data-en="visits">visite</span>
+      <img
+        src="https://hits.sh/ipekfab.github.io.svg?style=flat&label=&color=383e48&labelColor=141418&extraCount=0"
+        alt="visitor count"
+        class="counter-badge"
+      />
+    </div>
   </footer>
- 
+
   <script src="script.js"></script>
 </body>
 </html>
